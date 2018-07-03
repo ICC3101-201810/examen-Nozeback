@@ -53,8 +53,6 @@ namespace ExamenPacman
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            salir.Visible = true;
-
         }
 
         private void Ingresar_Click(object sender, EventArgs e)
@@ -85,7 +83,6 @@ namespace ExamenPacman
                         Thread.Sleep(2000);
                         label5.Visible = false;
                         temporizador.Enabled = true;
-                        salir.Visible = false;
                     }
                 }
                 if (s == 0)
@@ -100,7 +97,6 @@ namespace ExamenPacman
                         Contra.Visible = false;
                         Ingresar.Visible = false;
                         Crear.Visible = false;
-                        salir.Visible = false;
                         panelNuevoUsuario.Visible = true;
                         textBox1 = Usuario;
                         textBox2 = Contra;
@@ -124,7 +120,6 @@ namespace ExamenPacman
             Contra.Visible = false;
             Ingresar.Visible = false;
             Crear.Visible = false;
-            salir.Visible = false;
             panelNuevoUsuario.Visible = true;
 
         }
@@ -357,7 +352,6 @@ namespace ExamenPacman
                     Contra.Visible = true;
                     Ingresar.Visible = true;
                     Crear.Visible = true;
-                    salir.Visible = true;
                     panelNuevoUsuario.Visible = false;
                     textBox1.Clear();
                     textBox2.Clear();
@@ -397,7 +391,6 @@ namespace ExamenPacman
                 Contra.Visible = true;
                 Ingresar.Visible = true;
                 Crear.Visible = true;
-                salir.Visible = true;
                 panelNuevoUsuario.Visible = false;
                 textBox1.Clear();
                 textBox2.Clear();
@@ -493,7 +486,6 @@ namespace ExamenPacman
             Contra.Visible = true;
             Ingresar.Visible = true;
             Crear.Visible = true;
-            salir.Visible = true;
             panelNuevoUsuario.Visible = false;
             textBox1.Clear();
             textBox2.Clear();

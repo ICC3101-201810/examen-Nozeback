@@ -38,6 +38,8 @@
             this.Ingresar = new System.Windows.Forms.Button();
             this.Crear = new System.Windows.Forms.Button();
             this.panelJuego = new System.Windows.Forms.Panel();
+            this.volver2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.ThePacMan = new System.Windows.Forms.PictureBox();
             this.RedGhost = new System.Windows.Forms.PictureBox();
             this.PinkGhost = new System.Windows.Forms.PictureBox();
@@ -50,19 +52,16 @@
             this.Score = new System.Windows.Forms.Label();
             this.temporizador = new System.Windows.Forms.Timer(this.components);
             this.panelNuevoUsuario = new System.Windows.Forms.Panel();
-            this.Creacion = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.volver1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Creacion = new System.Windows.Forms.Button();
             this.tiempocherry = new System.Windows.Forms.Timer(this.components);
             this.timerchiri = new System.Windows.Forms.Timer(this.components);
             this.aprecimientoChiri = new System.Windows.Forms.Timer(this.components);
             this.aparecimientoCherry = new System.Windows.Forms.Timer(this.components);
-            this.salir = new System.Windows.Forms.Button();
-            this.volver1 = new System.Windows.Forms.Button();
-            this.volver2 = new System.Windows.Forms.Button();
             this.panelJuego.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ThePacMan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedGhost)).BeginInit();
@@ -166,6 +165,29 @@
             this.panelJuego.Tag = "MuroSuperior";
             this.panelJuego.Visible = false;
             this.panelJuego.Paint += new System.Windows.Forms.PaintEventHandler(this.panelJuego_Paint);
+            // 
+            // volver2
+            // 
+            this.volver2.Location = new System.Drawing.Point(1126, 13);
+            this.volver2.Name = "volver2";
+            this.volver2.Size = new System.Drawing.Size(146, 23);
+            this.volver2.TabIndex = 13;
+            this.volver2.Text = "Volver";
+            this.volver2.UseVisualStyleBackColor = true;
+            this.volver2.Click += new System.EventHandler(this.volver2_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label5.Location = new System.Drawing.Point(556, 85);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 39);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "label5";
+            this.label5.Visible = false;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // ThePacMan
             // 
@@ -307,40 +329,15 @@
             this.panelNuevoUsuario.Visible = false;
             this.panelNuevoUsuario.Paint += new System.Windows.Forms.PaintEventHandler(this.panelNuevoUsuario_Paint);
             // 
-            // Creacion
+            // volver1
             // 
-            this.Creacion.Location = new System.Drawing.Point(13, 105);
-            this.Creacion.Name = "Creacion";
-            this.Creacion.Size = new System.Drawing.Size(100, 95);
-            this.Creacion.TabIndex = 0;
-            this.Creacion.Text = "Crealo";
-            this.Creacion.UseVisualStyleBackColor = true;
-            this.Creacion.Click += new System.EventHandler(this.Creacion_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(13, 32);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(13, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 16);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Nombre del nuevo Usuario";
+            this.volver1.Location = new System.Drawing.Point(119, 105);
+            this.volver1.Name = "volver1";
+            this.volver1.Size = new System.Drawing.Size(76, 95);
+            this.volver1.TabIndex = 5;
+            this.volver1.Text = "Volver";
+            this.volver1.UseVisualStyleBackColor = true;
+            this.volver1.Click += new System.EventHandler(this.volver1_Click);
             // 
             // label4
             // 
@@ -351,18 +348,40 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Contrasena";
             // 
-            // label5
+            // label3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(556, 85);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(109, 39);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "label5";
-            this.label5.Visible = false;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(13, 16);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 13);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Nombre del nuevo Usuario";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(13, 74);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 2;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(13, 32);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // Creacion
+            // 
+            this.Creacion.Location = new System.Drawing.Point(13, 105);
+            this.Creacion.Name = "Creacion";
+            this.Creacion.Size = new System.Drawing.Size(100, 95);
+            this.Creacion.TabIndex = 0;
+            this.Creacion.Text = "Crealo";
+            this.Creacion.UseVisualStyleBackColor = true;
+            this.Creacion.Click += new System.EventHandler(this.Creacion_Click);
             // 
             // tiempocherry
             // 
@@ -384,36 +403,6 @@
             this.aparecimientoCherry.Interval = 30000;
             this.aparecimientoCherry.Tick += new System.EventHandler(this.aparecimientoCherry_Tick);
             // 
-            // salir
-            // 
-            this.salir.Location = new System.Drawing.Point(556, 290);
-            this.salir.Name = "salir";
-            this.salir.Size = new System.Drawing.Size(100, 23);
-            this.salir.TabIndex = 12;
-            this.salir.Text = "Salir";
-            this.salir.UseVisualStyleBackColor = true;
-            this.salir.Click += new System.EventHandler(this.salir_Click);
-            // 
-            // volver1
-            // 
-            this.volver1.Location = new System.Drawing.Point(119, 105);
-            this.volver1.Name = "volver1";
-            this.volver1.Size = new System.Drawing.Size(76, 95);
-            this.volver1.TabIndex = 5;
-            this.volver1.Text = "Volver";
-            this.volver1.UseVisualStyleBackColor = true;
-            this.volver1.Click += new System.EventHandler(this.volver1_Click);
-            // 
-            // volver2
-            // 
-            this.volver2.Location = new System.Drawing.Point(1126, 13);
-            this.volver2.Name = "volver2";
-            this.volver2.Size = new System.Drawing.Size(146, 23);
-            this.volver2.TabIndex = 13;
-            this.volver2.Text = "Volver";
-            this.volver2.UseVisualStyleBackColor = true;
-            this.volver2.Click += new System.EventHandler(this.volver2_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -422,7 +411,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1284, 761);
             this.Controls.Add(this.panelJuego);
-            this.Controls.Add(this.salir);
             this.Controls.Add(this.Crear);
             this.Controls.Add(this.Ingresar);
             this.Controls.Add(this.Contra);
@@ -489,7 +477,6 @@
         public System.Windows.Forms.TextBox Contra;
         public System.Windows.Forms.Button Ingresar;
         public System.Windows.Forms.Button Crear;
-        public System.Windows.Forms.Button salir;
     }
 }
 
